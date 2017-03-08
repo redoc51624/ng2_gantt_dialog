@@ -1,0 +1,20 @@
+<perfect-scrollbar class="container" [config]="config">
+    <div class="content">
+        <table class="mdl-data-table full-width" style='width:100%'>
+            <thead>
+
+            </thead>
+            <tr class="child-row" *ngFor="let result of results" (click)="openChildDialog()">
+
+                <td>
+                    <tr>{{result.start_time}}</tr>
+                    <tr>{{result.meridian}}</tr>
+                </td>
+                <td> {{result.company.catchPhrase}}</td>
+                <td> <i class="material-icons  md-dark md-25" ng-click="addSession()">&#xE148;</i></td>
+
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</perfect-scrollbar>

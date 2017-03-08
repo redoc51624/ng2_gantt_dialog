@@ -1,0 +1,40 @@
+<perfect-scrollbar class="container" [config]="config">
+    <div class="content">
+        <iframe src="https://www.youtube.com/embed/9hDKfBKuXjI" frameborder="0" allowfullscreen></iframe>
+        <table>
+            <thead>
+                <th>USER DETAILS</th>
+            </thead>
+            <tbody class="child-table">
+
+                <tr class="child-row" *ngFor="let result of results">
+
+                    {{result.company.catchPhrase}}
+                    <!--<p> {{result.company.bs}} </p>-->
+                </tr>
+
+            </tbody>
+        </table>
+        <!--dynamic session realted links-->
+        <div>
+            <i class="material-icons">&#xE16D;</i>Back
+            <a>home</a> ,<a>My schedule</a> ,<a>Previous session</a>
+        </div>
+
+        <div>
+            <!--Hyperlink like facebook twitter goes here-->
+        </div>
+
+        <button md-button class="rate-session" (click)="openRateDialog()"> RATE SESSION</button>
+
+
+        <!--container about speakers-->
+        <div class="speakers-details">
+
+            <!--speakers details goes herer-->
+        </div>
+
+
+
+    </div>
+</perfect-scrollbar>

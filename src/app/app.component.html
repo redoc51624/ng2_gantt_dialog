@@ -1,0 +1,53 @@
+<header>
+    <nav>
+    </nav>
+</header>
+<main>
+    <!--<md-toolbar>-->
+
+    <div>
+        <div class="offset-div"></div>
+        <div class="header-container">
+            <div class="header">
+                <p class="title">Schedule</p>
+            </div>
+        </div>
+        <section class="main-content">
+            <md-tab-group class="tab-group">
+                <md-tab>
+                    <template md-tab-label class="tab-labels">AGENDA</template>
+                    <h1> Event Management</h1>
+                    <div [chartData]="gantt_ChartData" [chartOptions]="gantt_chart_options" GanttChart>
+                    </div>
+                </md-tab>
+                <md-tab><template md-tab-label class="tab-labels">JAN 31</template>
+                    <my-tab4-content>
+                    </my-tab4-content>
+                </md-tab>
+                <md-tab><template md-tab-label class="tab-labels">FEB 1</template>
+                    <my-tab4-content>
+                    </my-tab4-content>
+                </md-tab>
+                <md-tab><template md-tab-label class="tab-labels">FEB 2</template>
+                    <my-tab4-content>
+                    </my-tab4-content>
+                </md-tab>
+                <md-tab><template md-tab-label class="tab-labels">MY SCHEDULE</template>Content-4</md-tab>
+                <md-tab><template md-tab-label class="tab-labels">MY PASS</template>Content-5</md-tab>
+            </md-tab-group>
+            <button md-button class="filter">Filter</button>
+            <!--<md-checkbox>Hey</md-checkbox>-->
+        </section>
+    </div>
+
+    <!--<h1>Hello from {{title}}!</h1>-->
+
+    <!-- Images (and assets) are parsed and loaded from within the public directory -->
+    <!--<img src="./img/angular.png">-->
+
+    <dialog-overview-example></dialog-overview-example>
+
+</main>
+<footer>
+    <!--<a [href]="url">Webpack Angular 2 Starter</a>-->
+</footer>
